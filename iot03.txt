@@ -1,0 +1,13 @@
+PROGREAM: 03
+
+from pandas import read_csv 
+from numpy import set_printoptions 
+from sklearn.feature_selection import SelectKBest 
+from sklearn.feature_selection import chi2
+
+path = r'D:\squad\book.csv'
+
+names = ['preg', 'plas', 'hello'] 
+dataframe = read_csv(path, names=names)
+array = dataframe.values 
+print(dataframe)
